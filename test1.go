@@ -7,8 +7,8 @@ import (
 )
 
 func main() {
-	reader := strings.NewReader("HelloWorld")
-	p := make([]byte, 3)
+	reader := strings.NewReader("HelloWorldHelloWorld")
+	p := make([]byte, 10)
 	for {
 		n, err := reader.Read(p)
 		if err == io.EOF {
