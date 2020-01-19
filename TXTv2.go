@@ -23,3 +23,10 @@ func main() {
 	fmt.Println(time.Since(start))
 	//os.RemoveAll("./TXT/")
 }
+
+func fileCreate() {
+	err := os.Mkdir("TXT", os.ModePerm)
+	if err != nil {
+		return
+	}
+}
